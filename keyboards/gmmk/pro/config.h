@@ -64,6 +64,7 @@
 #define DRIVER_2_EN C13
 
 #define DRIVER_COUNT 2
+#define RGBLIGHT_SLEEP
 
 // RGB Matrix Animation modes. Explicitly enabled
 // For full list of effects, see:
