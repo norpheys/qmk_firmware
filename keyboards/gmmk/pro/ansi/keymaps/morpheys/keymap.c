@@ -26,13 +26,13 @@ void refresh_rgb() {
   if (is_rgb_timeout) { // only do something if rgb has timed out
     print("Activity detected, removing timeout\n");
     is_rgb_timeout = false;
-    rgblight_wakeup();
+    rgblight_enable();
   }
 }
 
 void check_rgb_timeout() {
   if (!is_rgb_timeout && timer_elapsed(key_timer) > RGBLIGHT_TIMEOUT) {
-    rgblight_suspend();
+    rgblight_disable();
     is_rgb_timeout = true;
   }
 }
