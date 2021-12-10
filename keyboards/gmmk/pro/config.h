@@ -65,6 +65,7 @@
 
 #define DRIVER_COUNT 2
 #define RGBLIGHT_SLEEP
+#define RGBLIGHT_TIMEOUT 300000
 
 // RGB Matrix Animation modes. Explicitly enabled
 // For full list of effects, see:
